@@ -218,19 +218,24 @@ em {
 
 table {
   width: 100%;
-  border: 2px solid #2a12dc;
+  border: 2px solid #3942a3;
 }
 
 th {
   font-weight: 500;
-  color: black;
-  font-weight: bold;
+  background-color: #333;
+  color: white;
 }
 
 td {
   font-weight: 300;
   text-align: center;
-  border: 2px solid #2a12dc;
+  border: 2px solid #3942a3;
+}
+
+.cell-highlight {
+  font-weight: bold;
+  color: #333;
 }
 
 form {
