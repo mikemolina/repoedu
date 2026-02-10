@@ -1,0 +1,55 @@
+/*
+ * custom-styles.css
+ *
+ * Definicion de estilos personalizados.
+ * Version: 10 feb 2026
+ *
+ */
+
+/* Linea division post-open in-Tag-details */
+details[open] summary {
+    border-bottom: 3px solid #E7E7E7;
+}
+
+/* Transicion icono tag details */
+details[open] > summary::after {
+    transform: rotate(45deg);
+}
+
+/* Tag details personalizado */
+.custom-tag-details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background-color: #D6D6FF; /* #CEE9CE; #D3DFD3; */
+}
+
+/* Tag summary seccion nivelaciones (personalizado) */
+.custom-summary-sec-nivelaciones {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #FF0080;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Icono summary seccion nivelaciones (personalizado) */
+.custom-summary-sec-nivelaciones::after {
+    content: '';
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transition: 0.3s;
+    transform: rotate(-45deg);
+}
+
+/* Tag ul personalizado para tag details */
+.custom-tag-ul {
+    margin-left: 25px;
+}
