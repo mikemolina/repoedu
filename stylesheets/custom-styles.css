@@ -8,7 +8,7 @@
 
 /* Linea division post-open in-Tag-details */
 details[open] summary {
-    border-bottom: 3px solid #E7E7E7;
+    border-bottom: 1px solid #ADADAD;/*3px solid #E7E7E7;*/
 }
 
 /* Transicion icono tag details */
@@ -16,9 +16,18 @@ details[open] > summary::after {
     transform: rotate(45deg);
 }
 
+/* Ocultar marcadores de navegador por defecto */
+summary::-webkit-details-marker {
+  display: none;
+}
+
 /* Tag details personalizado */
 .custom-tag-details {
     margin-bottom: 10px;
+    border-top: solid #ADADAD 1px;
+    border-bottom: solid #ADADAD 2px;
+    border-right: solid #ADADAD 2px;
+    border-left: solid #ADADAD 1px;
     border-radius: 6px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     background-color: #D6D6FF; /* #CEE9CE; #D3DFD3; */
